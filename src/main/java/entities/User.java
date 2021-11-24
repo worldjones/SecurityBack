@@ -36,6 +36,8 @@ public class User implements Serializable {
 
     private Date createdAt;
     private Date updatedAt;
+    
+    String pepper = "securepepperString12351235";
 
     public User(String username, String password) {
         this.username = username;
@@ -43,7 +45,7 @@ public class User implements Serializable {
     }
 
     private String generateHashedPassword(String password) {
-        return BCrypt.hashpw(password, BCrypt.gensalt());
+        return BCrypt.hashpw(password, BCrypt.gensalt() + pepper);
     }
 
     public void setPassword(String password) {
