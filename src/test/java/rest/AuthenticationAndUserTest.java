@@ -28,7 +28,7 @@ import utils.EMF_Creator;
 import utils.Populate;
 
 public class AuthenticationAndUserTest {
-
+/*
     private static final int SERVER_PORT = 7777;
     private static final String SERVER_URL = "http://localhost/api";
 
@@ -335,5 +335,5 @@ public class AuthenticationAndUserTest {
                 .body("createdAt", notNullValue());
 
     }
-
+*/
 }

@@ -40,8 +40,8 @@ public class Populate {
         if (!userFacade.getAllPrivate().isEmpty()) return false;
 
         // NOTICE: Always set your password as environment variables.
-        String password_admin = "test";
-        String password_user = "test";
+        String password_admin = "test123456";
+        String password_user = "test123456";
 
         boolean isDeployed = System.getenv("DEPLOYED") != null;
         if(isDeployed) {

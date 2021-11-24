@@ -23,7 +23,7 @@ import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.Matchers.equalTo;
 
 public class UtilityResourceTest {
-
+/*
     private static final int SERVER_PORT = 7777;
     private static final String SERVER_URL = "http://localhost/api";
 
@@ -84,5 +84,5 @@ public class UtilityResourceTest {
                 .body("populated", contains("users"));
     }
 
-
+*/
 }

@@ -144,8 +144,8 @@ public class UserFacade {
             User user = new User();
 
             // Validate
-            if ((Strings.isNullOrEmpty(username) || username.length() < 3) || (Strings.isNullOrEmpty(password) || password.length() < 3))
-                throw new WebApplicationException("Username and/or password should be more than 3 characters!", 400);
+            if ((Strings.isNullOrEmpty(username) || username.length() < 3) || (Strings.isNullOrEmpty(password) || password.length() < 10))
+                throw new WebApplicationException("You need to enter a email and a 10 character password", 400);
 
             user.setUsername(username);
             user.setPassword(password);
