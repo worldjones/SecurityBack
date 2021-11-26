@@ -49,7 +49,7 @@ public class Populate {
             password_admin = System.getenv("PASSWORD_DEFAULT_ADMIN");
 
             // Do not allow "empty" passwords in production.
-            if(Strings.isNullOrEmpty(password_admin) || password_admin.trim().length() < 3 || Strings.isNullOrEmpty(password_user) || password_user.trim().length() < 3)
+            if(Strings.isNullOrEmpty(password_admin) || password_admin.trim().length() < 10 || Strings.isNullOrEmpty(password_user) || password_user.trim().length() < 10)
                 throw new IllegalArgumentException("FAILED POPULATE OF USERS: Passwords were empty or less than 3 characters? Are environment variables: [PASSWORD_DEFAULT_USER, PASSWORD_DEFAULT_ADMIN] set?");
         }
 
